@@ -1,0 +1,72 @@
+{
+  "personalInfo": {
+    "name": "Spencer Smith",
+    "email": "askspencersmith@gmail.com",
+    "phone": "801-655-3251",
+    "address1": "1141 S 700 E",
+    "address2": "Salt Lake City, Utah"
+  },
+  "workHistory": [
+    {
+      "title": "Front-End Engineer",
+      "company": {
+        "name": "SoFi",
+        "location": "Murray, Utah"
+      },
+      "start": "Jun 2018",
+      "end": "Present",
+      "description": ""
+    },
+    {
+      "title": "Co-founder, Full-stack Developer",
+      "company": {
+        "name": "Effortless Reviews",
+        "location": "Salt Lake City, Utah"
+      },
+      "start": "Feb 2017",
+      "end": "July 2018",
+      "description": ""
+    },
+    {
+      "title": "Front-End Developer",
+      "company": {
+        "name": "Jolt",
+        "location": "Lehi, Utah"
+      },
+      "start": "Jan 2018",
+      "end": "May 2018",
+      "description": ""
+    },
+    {
+      "title": "Software Development Intern",
+      "company": {
+        "name": "The Church of Jesus Christ of Latter-day Saints",
+        "location": "Lehi, Utah"
+      },
+      "start": "May 2017",
+      "end": "Aug 2017",
+      "description": ""
+    },
+    {
+      "title": "Web Developer, Graphic Artist",
+      "company": {
+        "name": "Energy & Geoscience Institute",
+        "location": "Salt Lake City, Utah"
+      },
+      "start": "Mar 2015",
+      "end": "Feb 2017",
+      "description": ""
+    }
+  ],
+  "awards": [
+    "Computer Technology Sterling Scholar",
+    "Eagle Scout – Boy Scouts of America"
+  ],
+  "education": {
+    "school": {
+      "name": "University of Utah",
+      "location": "Salt Lake City"
+    },
+    "description": "May 2019 - BS in Computer Science"
+  }
+}
