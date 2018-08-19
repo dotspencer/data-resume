@@ -40,8 +40,9 @@ const simple = (doc) => {
         })
     },
     insertPara: (text, options = {}) => {
-      const { bold, small } = options;
+      const { bold, small, moreSpace } = options;
       let spaceTop = bold ? 0.75 : 0.25;
+      if (moreSpace) spaceTop = 0.5;
       const color = '#444';
       doc
         .font(bold ? 'semi-bold' : 'regular')
@@ -79,8 +80,9 @@ const complex = (doc) => {
       simp.insertLinkTitle(name, url);
       simp.insertPara(description);
     },
-    insertLanguage: (lang) => {
-      simp.insertPara(`• ${lang}`);
+    insertList: (item, { noBullet, small, moreSpace }) => {
+      const text = noBullet ? item : `• ${item}`;
+      simp.insertPara(text, { small, moreSpace });
     },
   };
 };

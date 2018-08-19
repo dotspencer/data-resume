@@ -80,10 +80,20 @@
     "HTML + CSS",
     "JavaScript",
     "React.js",
+    "Enzyme",
+    "Jest",
     "GraphQL",
     "Node.js",
     "MySQL",
-    "Swift",
-    "Java"
+    "Swift"
+  ],
+  "knowledge": [
+    "Git",
+    "NGINX",
+    "Webpack",
+    "Command Line",
+    "Emacs",
+    "DigitalOcean",
+    "Jira"
   ]
 }
