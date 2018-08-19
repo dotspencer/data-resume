@@ -18,15 +18,16 @@ module.exports = (doc) => {
           characterSpacing: 1,
         })
 
-        .moveDown(0.5)
+        .moveDown(0.75)
     },
-    insertPara: (text) => {
+    insertPara: (text, options = {}) => {
+      const { bold } = options;
       doc
-        .font('src/fonts/FiraSans-Regular.ttf')
+        .font(bold ? 'src/fonts/FiraSans-SemiBold.ttf' : 'src/fonts/FiraSans-Regular.ttf')
         .fontSize(font.normal)
         .text(text)
 
-        .moveDown(0.5)
+        .moveDown(bold ? 0.5 : 0.75)
     }
   };
 };

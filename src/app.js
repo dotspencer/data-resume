@@ -12,11 +12,17 @@ doc.pipe(fs.createWriteStream('output.pdf'));
 const { insertHead, insertSub, insertPara } = require('./writer.js')(doc);
 const { personalInfo, workHistory } = require('./data.json');
 
+doc.addPage({
+  margin: 10,
+})
+
 insertHead(personalInfo.name);
 
 insertSub('EXPERIENCE');
 
-insertPara('Testing this out')
-insertPara('Testing this out')
+workHistory.map(({ title, company }) => {
+  insertPara(title, { bold: true });
+  insertPara(company.name);
+});
 
 doc.end()
