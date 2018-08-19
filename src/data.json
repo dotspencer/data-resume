@@ -58,6 +58,13 @@
       "description": ""
     }
   ],
+  "projects": [
+    {
+      "name": "Keen HTML",
+      "url": "https://keenhtml.com",
+      "description": "Interactive lessons to learn the basics of HTML"
+    }
+  ],
   "awards": [
     "Computer Technology Sterling Scholar",
     "Eagle Scout – Boy Scouts of America"
@@ -68,5 +75,15 @@
       "location": "Salt Lake City"
     },
     "description": "May 2019 - BS in Computer Science"
-  }
+  },
+  "languages": [
+    "HTML + CSS",
+    "JavaScript",
+    "React.js",
+    "GraphQL",
+    "Node.js",
+    "MySQL",
+    "Swift",
+    "Java"
+  ]
 }

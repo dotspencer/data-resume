@@ -1,8 +1,9 @@
 const constants = {
   font: {
-    header: 26,
+    header: 30,
     subheader: 16,
     normal: 16,
+    small: 14,
   }
 };
 
