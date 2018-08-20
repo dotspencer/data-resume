@@ -51,11 +51,11 @@ insertSub('EDUCATION');
 insertPara(`${edu.school.name}, ${edu.school.location}`, { bold: true });
 insertPara(edu.description);
 
-doc.text('', 375, 50);
+doc.text('', 375, 55);
 doc.text(pInfo.email);
 doc.text(pInfo.phone);
 
-doc.text('', 400, 85);
+doc.text('', 400, 90);
 
 insertSub("LANGUAGES\nFRAMEWORKS", { moreSpaceAfter: true });
 langs.map(insertList);
