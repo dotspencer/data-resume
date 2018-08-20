@@ -2,7 +2,12 @@ const PDF = require('pdfkit');
 
 const { font } = require('./constants.js');
 const doc = new PDF({
-  margin: 30,
+  margins: {
+    top: 50,
+    right: 30,
+    bottom: 30,
+    left: 40,
+  },
   // size: [400, 1000],
 });
 
@@ -46,11 +51,11 @@ insertSub('EDUCATION');
 insertPara(`${edu.school.name}, ${edu.school.location}`, { bold: true });
 insertPara(edu.description);
 
-doc.text('', 365, 30);
+doc.text('', 375, 50);
 doc.text(pInfo.email);
 doc.text(pInfo.phone);
 
-doc.text('', 390, 65);
+doc.text('', 400, 85);
 
 insertSub("LANGUAGES\nFRAMEWORKS", { moreSpaceAfter: true });
 langs.map(insertList);
