@@ -42,10 +42,10 @@ const simple = (doc) => {
         .moveDown(spaceAfter);
     },
     insertPara: (text, options = {}) => {
-      const { bold, small, moreSpace } = options;
+      const { bold, small, moreSpace, color: _color } = options;
       let spaceTop = bold ? 0.75 : 0.25;
       if (moreSpace) spaceTop = 0.5;
-      const color = '#444';
+      const color = _color || '#444';
       doc
         .font(bold ? 'semi-bold' : 'regular')
         .fontSize(small? font.small : font.normal)

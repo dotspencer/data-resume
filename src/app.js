@@ -5,7 +5,7 @@ const doc = new PDF({
   margins: {
     top: 50,
     right: 30,
-    bottom: 30,
+    bottom: 0,
     left: 40,
   },
   // size: [400, 1000],
@@ -66,7 +66,7 @@ awards.map(a => insertList(a, { noBullet: true, moreSpace: true }));
 insertSub('KNOWLEDGE', { moreSpaceAfter: true });
 knowledge.map(insertList);
 
-/* Contact info */
-// doc.text(pInfo.name, 390, 30);
+doc.text('', 160, doc.page.height - 40);
+insertPara('https://github.com/dotspencer/data-resume', { small: true, color: '#999' });
 
 doc.end()
