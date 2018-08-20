@@ -27,9 +27,10 @@ const simple = (doc) => {
         .text(text, options)
         .moveDown(spaceAfter) // extra space afterwards
     },
-    insertSub: (text) => {
+    insertSub: (text, { moreSpaceAfter } = {}) => {
       const spaceTop = 1.25;
       const color = '#1e90ff';
+      const spaceAfter = moreSpaceAfter ? 0.25 : 0;
       doc
         .font('semi-bold')
         .fontSize(font.subheader)
@@ -38,6 +39,7 @@ const simple = (doc) => {
         .text(text, {
           characterSpacing: 1,
         })
+        .moveDown(spaceAfter);
     },
     insertPara: (text, options = {}) => {
       const { bold, small, moreSpace } = options;
