@@ -44,8 +44,8 @@ insertHead(pInfo.name);
 insertSub('EXPERIENCE');
 workHistory.map(insertExperience);
 
-insertSub('PROJECTS');
-projects.map(insertProject);
+// insertSub('PROJECTS');
+// projects.map(insertProject);
 
 insertSub('EDUCATION');
 insertPara(`${edu.school.name}, ${edu.school.location}`, { bold: true });

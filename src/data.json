@@ -15,17 +15,11 @@
       },
       "start": "Jun 2018",
       "end": "Present",
-      "description": ""
-    },
-    {
-      "title": "Co-founder, Full-stack Developer",
-      "company": {
-        "name": "Effortless Reviews",
-        "location": "Salt Lake City, Utah"
-      },
-      "start": "Feb 2017",
-      "end": "July 2018",
-      "description": ""
+      "tags": ["React.js"],
+      "description": "",
+      "accomplished": [
+
+      ]
     },
     {
       "title": "Front-End Developer",
@@ -35,7 +29,28 @@
       },
       "start": "Jan 2018",
       "end": "May 2018",
-      "description": ""
+      "tags": ["React.js", "Redux", "React Native", "GraphQL - Relay"],
+      "description": "",
+      "accomplished": [
+        "Contributed to a client-side JavaScript library that generated PNG images for printable labels.",
+        "Responsible for re-writing and adding various new features to a drag-and-drop label builder using React and Redux."
+      ]
+    },
+    {
+      "title": "Co-founder, Full-stack Developer",
+      "company": {
+        "name": "Effortless Reviews - https://effortlessreviews.com",
+        "location": "Salt Lake City, Utah"
+      },
+      "start": "Feb 2017",
+      "end": "July 2018",
+      "tags": ["Node.js", "Express", "React", "Redux", "DigitalOcean", "NGINX"],
+      "description": "A review generation system to help local businesses rank higher on Google.",
+      "accomplished": [
+        "Designed and implemented four seperate React apps including a user/admin dashboard, public facing info pages, login and signup forms, and mobile-focused landing pages for collecting customer reviews.",
+        "Created an automated web scraper that periodically scrapes new online reviews for each user location.",
+        "Created a backend API for interacting with a MySQL database including logic for user management and permissions."
+      ]
     },
     {
       "title": "Software Development Intern",
@@ -45,7 +60,11 @@
       },
       "start": "May 2017",
       "end": "Aug 2017",
-      "description": ""
+      "tags": ["AngularJS", "Java"],
+      "description": "",
+      "accomplished": [
+        "Contributed to a system that allowed users to save custom searches to their account.",
+      ]
     },
     {
       "title": "Web Developer, Graphic Artist",
@@ -55,7 +74,13 @@
       },
       "start": "Mar 2015",
       "end": "Feb 2017",
-      "description": ""
+      "tags": ["Wordpress", "PHP", "JavaScript", "Ruby", "Sinatra"],
+      "description": "",
+      "accomplished": [
+        "Created a web app that scraped company webpages and PDFs to find data inconsistencies.",
+        "Wrote a number scripts for InDesign to automate the publishing process for the marketing team."
+      ],
+      "hidden": false
     }
   ],
   "projects": [

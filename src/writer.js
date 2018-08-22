@@ -72,7 +72,8 @@ const complex = (doc) => {
   const simp = simple(doc);
   return {
     insertExperience: (item) => {
-      const { title, company, start, end } = item;
+      const { title, company, start, end, hidden } = item;
+      if (hidden) return;
       simp.insertPara(title, { bold: true });
       simp.insertPara(company.name);
       simp.insertPara(`${start} - ${end}`, { small: true });
