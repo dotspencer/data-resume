@@ -63,7 +63,7 @@
       "tags": ["AngularJS", "Java"],
       "description": "",
       "accomplishments": [
-        "Contributed to a system that allowed users to save custom searches to their account."
+        "Contributed to an internal user management web app using Angular and Java."
       ]
     },
     {
@@ -92,7 +92,7 @@
   ],
   "awards": [
     "Computer Technology Sterling Scholar",
-    "Eagle Scout – Boy Scouts of America"
+    "Eagle Scout – Boy Scouts of\nAmerica"
   ],
   "education": {
     "school": {
@@ -117,7 +117,6 @@
     "NGINX",
     "Webpack",
     "Command Line",
-    "Emacs",
     "DigitalOcean",
     "Jira"
   ]

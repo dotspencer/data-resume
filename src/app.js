@@ -47,24 +47,21 @@ workHistory.map(insertExperience);
 doc.text('', 375, 20);
 insertPara(pInfo.email);
 insertPara(pInfo.phone);
-doc.moveDown();
 
-// doc.text('', 400, 90);
-
-insertSub('PROJECTS');
+insertSub('PROJECTS', { moreSpaceTop: true });
 projects.map(insertProject);
 
-insertSub('EDUCATION');
+insertSub('EDUCATION', { moreSpaceTop: true });
 insertPara(`${edu.school.name}, ${edu.school.location}`, { bold: true, small: true });
 insertPara(edu.description, { small: true });
 
-insertSub("LANGUAGES\nFRAMEWORKS", { moreSpaceAfter: true });
+insertSub("LANGUAGES\nFRAMEWORKS", { moreSpaceAfter: true, moreSpaceTop: true });
 langs.map(a => insertListItem(a, { small: true }));
 
-insertSub('AWARDS');
+insertSub('AWARDS', { moreSpaceTop: true });
 awards.map(a => insertListItem(a, { noBullet: true, moreSpace: true, small: true }));
 
-insertSub('KNOWLEDGE', { moreSpaceAfter: true });
+insertSub('KNOWLEDGE', { moreSpaceAfter: true, moreSpaceTop: true });
 knowledge.map(a => insertListItem(a, { small: true }));
 
 // doc.text('', 160, doc.page.height - 30);

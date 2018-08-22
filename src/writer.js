@@ -27,8 +27,8 @@ const simple = (doc) => {
         .text(text, options)
         .moveDown(spaceAfter) // extra space afterwards
     },
-    insertSub: (text, { moreSpaceAfter } = {}) => {
-      const spaceTop = 0.75;
+    insertSub: (text, { moreSpaceAfter, moreSpaceTop } = {}) => {
+      const spaceTop = moreSpaceTop ? 1.25 : 0.75;
       const color = '#1e90ff';
       const spaceAfter = moreSpaceAfter ? 0.25 : 0;
       doc
