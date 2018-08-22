@@ -63,7 +63,7 @@ const simple = (doc) => {
       const color = '#444';
       doc
         .font('semi-bold')
-        .fontSize(font.normal)
+        .fontSize(font.small)
         .moveDown(spaceTop)
         .fillColor(color)
         .text(name, { continued: true })
@@ -76,20 +76,20 @@ const simple = (doc) => {
 const complex = (doc) => {
   const simp = simple(doc);
 
-  const insertListItem = (item, { noBullet, small, moreSpace }) => {
+  const insertListItem = (item, { noBullet, small, xsmall, moreSpace }) => {
     const text = noBullet ? item : `• ${item}`;
-    simp.insertPara(text, { small, moreSpace });
+    simp.insertPara(text, { small, xsmall, moreSpace });
   };
   const insertProject = (project) => {
     const { name, description, url } = project;
     simp.insertLinkTitle(name, url);
-    simp.insertPara(description);
+    simp.insertPara(description, { small: true });
   };
   const insertAccomplishmentsList = (accomplishments) => {
     const indent = 10;
     doc.text('', doc.x + indent, doc.y);
     accomplishments.map(acc => {
-      let spaceTop = 0.3;
+      let spaceTop = 0.35;
       const color = '#444';
       const options = {
         lineGap: 2,

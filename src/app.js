@@ -44,29 +44,30 @@ insertHead(pInfo.name);
 insertSub('EXPERIENCE');
 workHistory.map(insertExperience);
 
-// insertSub('PROJECTS');
-// projects.map(insertProject);
+doc.text('', 375, 20);
+insertPara(pInfo.email);
+insertPara(pInfo.phone);
+doc.moveDown();
+
+// doc.text('', 400, 90);
+
+insertSub('PROJECTS');
+projects.map(insertProject);
 
 insertSub('EDUCATION');
-insertPara(`${edu.school.name}, ${edu.school.location}`, { bold: true });
-insertPara(edu.description);
-
-doc.text('', 375, 55);
-doc.text(pInfo.email);
-doc.text(pInfo.phone);
-
-doc.text('', 400, 90);
+insertPara(`${edu.school.name}, ${edu.school.location}`, { bold: true, small: true });
+insertPara(edu.description, { small: true });
 
 insertSub("LANGUAGES\nFRAMEWORKS", { moreSpaceAfter: true });
-langs.map(insertListItem);
+langs.map(a => insertListItem(a, { small: true }));
 
 insertSub('AWARDS');
-awards.map(a => insertListItem(a, { noBullet: true, moreSpace: true }));
+awards.map(a => insertListItem(a, { noBullet: true, moreSpace: true, small: true }));
 
 insertSub('KNOWLEDGE', { moreSpaceAfter: true });
-knowledge.map(insertListItem);
+knowledge.map(a => insertListItem(a, { small: true }));
 
-doc.text('', 160, doc.page.height - 40);
-insertPara('https://github.com/dotspencer/data-resume', { small: true, color: '#999' });
+// doc.text('', 160, doc.page.height - 30);
+// insertPara('https://github.com/dotspencer/data-resume', { small: true, color: '#999' });
 
 doc.end()

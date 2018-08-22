@@ -47,7 +47,7 @@
       "tags": ["Node.js", "Express", "React", "Redux", "DigitalOcean", "NGINX"],
       "description": "A review generation system to help local businesses rank higher on Google.",
       "accomplishments": [
-        "Designed and implemented four seperate React apps including a user/admin dashboard, public facing pages, login and signup forms, and mobile-focused landing pages for collecting customer reviews.",
+        "Designed and implemented four unique React apps including a user/admin dashboard, public-facing pages, login and signup forms, and mobile-focused landing pages for collecting customer reviews.",
         "Created an automated web scraper that periodically scrapes new online reviews for each user location.",
         "Created a backend API (Node.js and Express) for interacting with a MySQL database including logic for user management and permissions."
       ]
@@ -87,7 +87,7 @@
     {
       "name": "Keen HTML",
       "url": "https://keenhtml.com",
-      "description": "Interactive lessons to learn the basics of HTML"
+      "description": "Interactive lessons to learn HTML"
     }
   ],
   "awards": [
