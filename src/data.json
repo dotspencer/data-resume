@@ -15,10 +15,10 @@
       },
       "start": "Jun 2018",
       "end": "Present",
-      "tags": ["React.js"],
+      "tags": ["React.js", "Context API"],
       "description": "",
-      "accomplished": [
-
+      "accomplishments": [
+        "Worked heavily with the Quovo API allowing users to connect their bank account from within the React web app for fund distribution."
       ]
     },
     {
@@ -29,56 +29,57 @@
       },
       "start": "Jan 2018",
       "end": "May 2018",
-      "tags": ["React.js", "Redux", "React Native", "GraphQL - Relay"],
+      "tags": ["React.js", "Redux", "React Native", "GraphQL (Relay)"],
       "description": "",
-      "accomplished": [
+      "accomplishments": [
         "Contributed to a client-side JavaScript library that generated PNG images for printable labels.",
         "Responsible for re-writing and adding various new features to a drag-and-drop label builder using React and Redux."
       ]
     },
     {
-      "title": "Co-founder, Full-stack Developer",
+      "title": "Full-Stack Developer",
       "company": {
-        "name": "Effortless Reviews - https://effortlessreviews.com",
+        "name": "Effortless Reviews",
         "location": "Salt Lake City, Utah"
       },
       "start": "Feb 2017",
       "end": "July 2018",
       "tags": ["Node.js", "Express", "React", "Redux", "DigitalOcean", "NGINX"],
       "description": "A review generation system to help local businesses rank higher on Google.",
-      "accomplished": [
-        "Designed and implemented four seperate React apps including a user/admin dashboard, public facing info pages, login and signup forms, and mobile-focused landing pages for collecting customer reviews.",
+      "accomplishments": [
+        "Designed and implemented four seperate React apps including a user/admin dashboard, public facing pages, login and signup forms, and mobile-focused landing pages for collecting customer reviews.",
         "Created an automated web scraper that periodically scrapes new online reviews for each user location.",
-        "Created a backend API for interacting with a MySQL database including logic for user management and permissions."
+        "Created a backend API (Node.js and Express) for interacting with a MySQL database including logic for user management and permissions."
       ]
     },
     {
       "title": "Software Development Intern",
       "company": {
-        "name": "The Church of Jesus Christ of Latter-day Saints",
+        "name": "LDS Church",
         "location": "Lehi, Utah"
       },
       "start": "May 2017",
       "end": "Aug 2017",
       "tags": ["AngularJS", "Java"],
       "description": "",
-      "accomplished": [
-        "Contributed to a system that allowed users to save custom searches to their account.",
+      "accomplishments": [
+        "Contributed to a system that allowed users to save custom searches to their account."
       ]
     },
     {
       "title": "Web Developer, Graphic Artist",
       "company": {
-        "name": "Energy & Geoscience Institute",
+        "name": "EGI",
         "location": "Salt Lake City, Utah"
       },
       "start": "Mar 2015",
       "end": "Feb 2017",
       "tags": ["Wordpress", "PHP", "JavaScript", "Ruby", "Sinatra"],
       "description": "",
-      "accomplished": [
+      "accomplishments": [
         "Created a web app that scraped company webpages and PDFs to find data inconsistencies.",
-        "Wrote a number scripts for InDesign to automate the publishing process for the marketing team."
+        "Wrote a number scripts for InDesign to automate the publishing process for the marketing team.",
+        "Maintained and updated Wordpress websites for two research organizations within the company."
       ],
       "hidden": false
     }

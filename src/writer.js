@@ -70,23 +70,62 @@ const simple = (doc) => {
 
 const complex = (doc) => {
   const simp = simple(doc);
+
+  const insertListItem = (item, { noBullet, small, moreSpace }) => {
+    const text = noBullet ? item : `• ${item}`;
+    simp.insertPara(text, { small, moreSpace });
+  };
+  const insertProject = (project) => {
+    const { name, description, url } = project;
+    simp.insertLinkTitle(name, url);
+    simp.insertPara(description);
+  };
+  const insertAccomplishmentsList = (accomplishments) => {
+    const indent = 10;
+    doc.text('', doc.x + indent, doc.y);
+    accomplishments.map(acc => {
+      let spaceTop = 0.3;
+      const color = '#444';
+      const options = {
+        lineGap: 2,
+        width: 330,
+        indent: -8,
+      };
+      doc
+        .font('regular')
+        .fontSize(font.small)
+        .moveDown(spaceTop)
+        .fillColor(color)
+        .text(`• ${acc}`, options)
+    });
+    doc.text('', doc.x - indent, doc.y);
+  };
+  const insertExperienceTitle = (title, companyName) => {
+    let spaceTop = 0.75;
+    const color = '#444';
+    doc
+      .font('semi-bold')
+      .fontSize(font.small)
+      .moveDown(spaceTop)
+      .fillColor(color)
+      .text(title, { continued: true })
+      .font('regular')
+      .text(' - ' + companyName)
+  }
+  const insertExperience = (item) => {
+    const { title, company, start, end, hidden, accomplishments } = item;
+    if (hidden) return;
+    // simp.insertPara(title, { bold: true });
+    // simp.insertPara(company.name);
+    insertExperienceTitle(title, company.name);
+    simp.insertPara(`${start} - ${end}`, { small: true });
+    insertAccomplishmentsList(accomplishments);
+  };
+
   return {
-    insertExperience: (item) => {
-      const { title, company, start, end, hidden } = item;
-      if (hidden) return;
-      simp.insertPara(title, { bold: true });
-      simp.insertPara(company.name);
-      simp.insertPara(`${start} - ${end}`, { small: true });
-    },
-    insertProject: (project) => {
-      const { name, description, url } = project;
-      simp.insertLinkTitle(name, url);
-      simp.insertPara(description);
-    },
-    insertList: (item, { noBullet, small, moreSpace }) => {
-      const text = noBullet ? item : `• ${item}`;
-      simp.insertPara(text, { small, moreSpace });
-    },
+    insertExperience,
+    insertProject,
+    insertListItem,
   };
 };
 

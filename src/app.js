@@ -3,10 +3,10 @@ const PDF = require('pdfkit');
 const { font } = require('./constants.js');
 const doc = new PDF({
   margins: {
-    top: 50,
-    right: 30,
+    top: 20,
+    right: 20,
     bottom: 0,
-    left: 40,
+    left: 20,
   },
   // size: [400, 1000],
 });
@@ -20,7 +20,7 @@ const {
   insertPara,
   insertExperience,
   insertProject,
-  insertList
+  insertListItem
 } = require('./writer.js')(doc);
 
 /**
@@ -58,13 +58,13 @@ doc.text(pInfo.phone);
 doc.text('', 400, 90);
 
 insertSub("LANGUAGES\nFRAMEWORKS", { moreSpaceAfter: true });
-langs.map(insertList);
+langs.map(insertListItem);
 
 insertSub('AWARDS');
-awards.map(a => insertList(a, { noBullet: true, moreSpace: true }));
+awards.map(a => insertListItem(a, { noBullet: true, moreSpace: true }));
 
 insertSub('KNOWLEDGE', { moreSpaceAfter: true });
-knowledge.map(insertList);
+knowledge.map(insertListItem);
 
 doc.text('', 160, doc.page.height - 40);
 insertPara('https://github.com/dotspencer/data-resume', { small: true, color: '#999' });
