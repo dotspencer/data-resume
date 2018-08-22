@@ -28,7 +28,7 @@ const simple = (doc) => {
         .moveDown(spaceAfter) // extra space afterwards
     },
     insertSub: (text, { moreSpaceAfter } = {}) => {
-      const spaceTop = 1.25;
+      const spaceTop = 0.75;
       const color = '#1e90ff';
       const spaceAfter = moreSpaceAfter ? 0.25 : 0;
       doc
@@ -42,13 +42,18 @@ const simple = (doc) => {
         .moveDown(spaceAfter);
     },
     insertPara: (text, options = {}) => {
-      const { bold, small, moreSpace, color: _color } = options;
+      const { bold, small, xsmall, moreSpace, color: _color } = options;
       let spaceTop = bold ? 0.75 : 0.25;
       if (moreSpace) spaceTop = 0.5;
       const color = _color || '#444';
+
+      let fontSize = font.normal;
+      if (small) fontSize = font.small;
+      if (xsmall) fontSize = font.xsmall;
+
       doc
         .font(bold ? 'semi-bold' : 'regular')
-        .fontSize(small? font.small : font.normal)
+        .fontSize(fontSize)
         .moveDown(spaceTop)
         .fillColor(color)
         .text(text)
@@ -118,7 +123,7 @@ const complex = (doc) => {
     // simp.insertPara(title, { bold: true });
     // simp.insertPara(company.name);
     insertExperienceTitle(title, company.name);
-    simp.insertPara(`${start} - ${end}`, { small: true });
+    simp.insertPara(`${start} - ${end}`, { xsmall: true, color: '#666' });
     insertAccomplishmentsList(accomplishments);
   };
 

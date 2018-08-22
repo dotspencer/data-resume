@@ -4,6 +4,7 @@ const constants = {
     subheader: 15,
     normal: 15,
     small: 13,
+    xsmall: 12,
   }
 };
 

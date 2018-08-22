@@ -77,9 +77,8 @@
       "tags": ["Wordpress", "PHP", "JavaScript", "Ruby", "Sinatra"],
       "description": "",
       "accomplishments": [
-        "Created a web app that scraped company webpages and PDFs to find data inconsistencies.",
-        "Wrote a number scripts for InDesign to automate the publishing process for the marketing team.",
-        "Maintained and updated Wordpress websites for two research organizations within the company."
+        "Created a web app in Ruby that scraped company webpages and PDFs to find data inconsistencies.",
+        "Wrote scripts for InDesign to automate the publishing process for the marketing team."
       ],
       "hidden": false
     }
